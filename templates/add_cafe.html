@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a cafe</title>
+</head>
+{% include "headder.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+<body>
+<h1 class="curly-font middle tx-grande latte stretch">Create Your Cafe!</h1>
+<div class="container stretch">
+    <div class="row">
+        {{ wtf.quick_form(form, button_map={"submit": "primary"}) }}
+    </div>
+</div>
+</body>
+{% include "footer.html" %}
+</html>

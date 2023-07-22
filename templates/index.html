@@ -1,0 +1,49 @@
+{% include "headder.html" %}
+
+<body>
+    <div class="hello latte">
+        <div>
+        <h1 class="curly-font tx-grande middle hello-header">Welcome</h1>
+        <h3 class="curly-font middle">to</h3>
+        <h3 class="curly-font tx-tall middle">Cafe Crawler</h3>
+            </div>
+    </div>
+
+    <div style="height: 0px; text-align: right;">
+        <img src="static/img/coffe_splash.png" alt="coffe cup, local cafes" class="cup">
+    </div>
+
+    <div class="divider americano push-bottom"></div>
+
+    <div class="container middle">
+  <div class="row middle">
+              {% for cafe in cafes %}
+    <div class="col-lg-2 col-md-4 col-sm-6 card" style="width: 18rem;">
+      <img src="{{ cafe.img }}" class="card-img-top cafe_img" alt="...">
+      <div class="card-body">
+        <h4> {{ cafe.name }}</h4>
+        <p class="card-text">
+            <p>Rating:
+            {% for i in range(0, cafe.rating) %}
+            ⭐
+            {% endfor %}
+            </p>
+            <p>Wifi Strength:
+            {% for i in range(0, cafe.wifi_strength) %}
+            ⭐
+            {% endfor %}
+            </p>
+            {% if cafe.outlets %}
+            Has outlets
+            {% endif %}
+        </p>
+        <a href="{{cafe.location}}">See Location</a>
+      </div>
+    </div>
+      {% endfor %}
+  </div>
+</div>
+
+    <div class="divider americano push-top"></div>
+</body>
+{% include "footer.html" %} 

@@ -1,0 +1,93 @@
+.americano {
+    background-color: #583424;
+}
+
+.cafes {
+    text-align: center;
+}
+
+.cafe_img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.cup {
+    text-align; right;
+    height: 500px;
+    position: relative;
+    z-index; -1;
+    bottom: 450px
+}
+
+.divider {
+    position: relative;
+    height: 50px;
+    z-index: 1;
+
+}
+
+.push-top {
+    margin-top: 50px
+}
+
+.push-bottom {
+    margin-bottom: 50px;
+}
+.curly-font {
+    font-family: 'Dancing Script', cursive;
+}
+
+.element {
+    width: 200px;
+}
+
+.latte {
+    background-color: #ecd7bc;
+}
+
+footer {
+    padding-top: 80px;
+    height: 200px;
+}
+
+.hello {
+  text-align: right;
+  position: relative;
+  z-index: -2;
+  padding-bottom: 125px;
+}
+
+.hello-header {
+    padding-top: 100px;
+}
+
+.middle {
+    text-align: center;
+}
+
+.tx-grande {
+    font-size: 4rem;
+}
+
+.tx-tall {
+    font-size: 2rem;
+}
+
+.tx-wt {
+    color: white;
+}
+
+.tx-americano{
+    color: #583424;
+}
+
+.stretch {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 800px) {
+    .cup {
+        display: none;
+    }
+}
